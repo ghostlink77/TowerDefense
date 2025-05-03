@@ -11,6 +11,8 @@ public class Enemy : MonoBehaviour
     private Movement2D movement2D;
     private EnemySpawner enemySpawner;
 
+    [SerializeField] private int gold = 10;
+
     public void SetUp(EnemySpawner enemySpawner, Transform[] wayPoints)
     {
         movement2D = GetComponent<Movement2D>();
@@ -59,12 +61,13 @@ public class Enemy : MonoBehaviour
         // wayPoints°¡ ³¡³µ´Ù¸é
         else
         {
+            gold = 0;
             OnDie(EnemyDestroyType.Arrive);
         }
     }
 
     public void OnDie(EnemyDestroyType type)
     {
-        enemySpawner.DestroyEnemy(type, this);
+        enemySpawner.DestroyEnemy(type, this, gold);
     }
 }

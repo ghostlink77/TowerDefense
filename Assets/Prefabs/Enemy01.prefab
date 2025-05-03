@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4547676007741245590}
   - component: {fileID: 6223873018307054953}
   - component: {fileID: 6034116347201175430}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy01
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -139,6 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 578dee16a95aba840983503ece17c24a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gold: 10
 --- !u!114 &6223873018307054953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,4 +166,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a0061191c1e9bc4e9424d94ff47e864, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 5
+  maxHP: 6
